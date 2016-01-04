@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mainApp">
 
 <head>
     <title> The Angular Angkor </title>
@@ -20,60 +20,12 @@
 
 </head>
 
-<body>
+<body ng-controller="mainCtrl">
     <!--  Part 1 Menu -->
-    <div id='cssmenu'>
-        <ul>
 
-            <li>
-                <a href='index.html'>
-                    <i class=""> </i><span> Home</span></a>
-            </li>
-
-            <li>
-                <li class='active has-sub'> <a href='#'><span>ComputerTech</span></a>
-                    <ul>
-                        <li class=''>
-                            <a href='ComputerTech/Education/AVG/AVG.html'> <span> Free Software </span></a>
-                        </li>
-                    </ul>
-                </li>
+    <div id='cssmenu' ng-include="'main/menu.html'"> </div>
 
 
-                <li class='active has-sub'><a href='#'><span>Entertainments</span></a>
-                    <ul>
-                        <li class=''>
-                            <a href='Entertainments/Gallery/gallery.html'> <span>Gallery</span></a>
-                        </li>
-                        <li class=''><a href='Entertainments/Music/music.html'><span>Music</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class='active has-sub'><a href='#'><span>Games</span></a>
-                    <ul>
-                        <li class=''><a href='Games/Snake/snake.html'><span>Snake</span></a>
-                        </li>
-                        <li class=''><a href='Games/TicTacToe/tictactoe.html'><span>Tic Tac Toe</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class='active has-sub'><a href='#'><span>Utilities</span></a>
-                    <ul>
-                        <li class=''>
-                            <a href='Utility/iStudy/iStudy.html'> <span>iStudy</span></a>
-                        </li>
-                        <li class=''><a href='Utility/Calculator/calculator.html'><span>Calculator</span></a>
-                        </li>
-                        <li class=''><a href='Utility/iStudy/library.html'><span>Library</span></a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="pull-right"><a href="SignUp/index.html">Sign Up</a></li>
-                <li class="pull-right"><a href="#">Log In</a></li>
-                <li class="pull-right"><a href="#">Help</a></li>
-        </ul>
-    </div>
 
     <!-- Part 2 Date and Time -->
     <div class="pull-right dateTime"> <strong>

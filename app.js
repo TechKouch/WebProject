@@ -1,3 +1,8 @@
+var app = angular.module('mainApp', []);
+app.controller('mainCtrl', function ($scope, $http) {
+
+});
+
 //Fade In
 //$(document).ready(function () {
 //    $('body').hide().fadeIn(3000);
