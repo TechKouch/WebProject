@@ -2,23 +2,212 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../../StyleSheets/amazonaws.css">
+    <link rel="stylesheet" href="../../StyleSheets/main.css">
+    <link rel="stylesheet" href="../../StyleSheets/styles.css">
+    <link rel="shortcut icon" href="../../StyleSheets/angkor.ico">
+    <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
 
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="gallery.js"></script>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../StyleSheets/main.css">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="script.js"></script>
 
 </head>
 
-<body style="background-image: url(website_under_construction1.png); background-repeat: no-repeat;  background-size: 100%">
-    <div class="container">
+<body>
+
+    <div id='cssmenu'>
+        <ul>
+
+            <li>
+                <a href='../../index.html'> <i class=""></i><span> Home </span></a>
+            </li>
+
+            <li>
+                <li class='active has-sub'> <a href='#'><span>Technology</span></a>
+                    <ul>
+                        <li class=''>
+                            <a href='../../ComputerTech/Education/AVG/AVG.html'> <span> Free Software </span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class='active has-sub'><a href='#'><span>Entertainments</span></a>
+                    <ul>
+                        <li class=''><a href='../../Entertainments/Gallery/gallery.html'><span>Gallery</span></a>
+                        </li>
+                        <li class=''><a href='../../Entertainments/Music/music.html'><span>Music</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class='active has-sub'><a href='#'><span>Games</span></a>
+                    <ul>
+                        <li class=''><a href='../../Games/Snake/snake.html'><span>Snake</span></a>
+                        </li>
+                        <li class=''><a href='../../Games/TicTacToe/tictactoe.html'><span>Tic Tac Toe</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class='active has-sub'><a href='#'><span>LEARN</span></a>
+                    <ul>
+                        <li class=''><a href='../../Utility/iStudy/iStudy.html'><span>iStudy</span></a>
+                        </li>
+                        <li class=''><a href='library.html'><span>Library</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="pull-right"><a href="../../SignUp/index.html">Sign Up</a></li>
+                <li ng-click="logInPopup()" class="pull-right"><a href="#">Log In</a></li>
+                <li ng-click="alertPopup()" class="pull-right"><a href="#">Help</a></li>
+                <li onClick="goBack();" class="pull-right"><a href="#">Back</a></li>
+
+        </ul>
+    </div>
+
+    <div class="iStudy">
+
+        <ul class="photo-grid">
+            <li>
+                <a href="file:///C:/Users/Poiveng/Desktop/AngularAngkor/Utility/iStudy/library.html#">
+                    <figure>
+                        <img src="../../StyleSheets/html5.jpg" height="180" width="320" alt="Learn More">
+                        <figcaption>
+                            <p>Learn More</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="../../StyleSheets/icon_game.png" height="100" width="200" alt="Play Games">
+                        <figcaption>
+                            <p>Play Games</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="../../StyleSheets/landscape.png" height="180" width="320" alt="Picture Gallery">
+                        <figcaption>
+                            <p>Picture Gallery</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="photo-grid">
+            <li>
+                <a href="file:///C:/Users/Poiveng/Desktop/AngularAngkor/Utility/iStudy/library.html#">
+                    <figure>
+                        <img src="../../StyleSheets/html5.jpg" height="180" width="320" alt="Learn More">
+                        <figcaption>
+                            <p>Learn More</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="../../StyleSheets/icon_game.png" height="100" width="200" alt="Play Games">
+                        <figcaption>
+                            <p>Play Games</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="../../StyleSheets/landscape.png" height="180" width="320" alt="Picture Gallery">
+                        <figcaption>
+                            <p>Picture Gallery</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="photo-grid">
+            <li>
+                <a href="file:///C:/Users/Poiveng/Desktop/AngularAngkor/Utility/iStudy/library.html#">
+                    <figure>
+                        <img src="../../StyleSheets/html5.jpg" height="180" width="320" alt="Learn More">
+                        <figcaption>
+                            <p>Learn More</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="../../StyleSheets/icon_game.png" height="100" width="200" alt="Play Games">
+                        <figcaption>
+                            <p>Play Games</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="../../StyleSheets/landscape.png" height="180" width="320" alt="Picture Gallery">
+                        <figcaption>
+                            <p>Picture Gallery</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="photo-grid">
+            <li>
+                <a href="file:///C:/Users/Poiveng/Desktop/AngularAngkor/Utility/iStudy/library.html#">
+                    <figure>
+                        <img src="../../StyleSheets/html5.jpg" height="180" width="320" alt="Learn More">
+                        <figcaption>
+                            <p>Learn More</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="../../StyleSheets/icon_game.png" height="100" width="200" alt="Play Games">
+                        <figcaption>
+                            <p>Play Games</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="../../StyleSheets/landscape.png" height="180" width="320" alt="Picture Gallery">
+                        <figcaption>
+                            <p>Picture Gallery</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+
 
     </div>
-    <input type="button" value="Back button" onClick="goBack();" />
+
+
+
 </body>
 
 
